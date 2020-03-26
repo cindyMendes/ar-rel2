@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <form action="/show_user" method="post"> 
+            <p> Students: </p>
+            <% @students.each do |i| %>
+                <p> <%= i.name %> </p>
+            <% end %>
+            
+            <br/>
+            
+            <label for="username"> User Name: </label>
+            <input type="text" name="name" id="username">
+            <input type="submit" value="Show" >
+        </form>
+    
+    </body>
+</html>

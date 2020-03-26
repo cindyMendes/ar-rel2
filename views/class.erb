@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p> Class ID: </p>
+        <%= @class.id %>
+        <br/><br/>
+        
+        <p> Name: </p>
+        <%= @class.name %>
+        <br/><br/>
+        
+        <p> Instructor: </p>
+        <%= @class.instructor %>
+        <br/><br/>
+        
+        <p> Classes: </p>
+        <ul>
+            <% c_c = @class.students %>
+            <% c_c.each do |c| %>
+                <li> <%= c.name %> </li>
+            <% end %>
+        </ul>
+    
+    </body>
+</html>

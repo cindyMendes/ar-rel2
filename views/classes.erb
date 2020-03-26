@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> College Classes: </h2>
+        
+        <% @classes.each do |c| %>
+            <p> <%= c.name %> <a href="/class/<%= c.id%>"> Show information </a> </p>
+        <% end %>
+    </body>
+</html>
